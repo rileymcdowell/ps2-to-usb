@@ -10,18 +10,11 @@ after all), so that's all I'll say about the "why".
 Most of the code in this library was taken from the teensyduino library. You can
 find updated versions of that source code at https://github.com/PaulStoffregen/cores.
 
-The following files were created to enable this project:
+### How do I hook this up? ###
 
-1. main.cpp
-2. keymap.cpp/h
-3. keyState.cpp/h
-4. translator.cpp/h
-5. usbSender.cpp/h
-6. ps2host.cpp/h
-7. flags.cpp/h
-8. constants.h
-9. scancodes.h
-10. ps2\_codes.ods
+A picture is worth a thousand words.
+
+![teensy connected on a breadboard](https://github.com/rileymcdowell/ps2-to-usb/raw/master/teensy_on_breadboard.jpg "Teensy Connected on a Breadboard")
 
 
 ### How does this work? - Short Version ###
@@ -57,3 +50,20 @@ The "keycode" representation is simply the index into the array of USB Usage Cod
  
 Last, the SendUSB function from usbSender.cpp writes the current translated USB Usage Codes to the
 teensy USB port, and flickers the teensy LED during the write operation to USB.
+
+### That's a ton of files, which ones are unique to this project?
+
+The following files were created to enable this project:
+
+1. main.cpp
+2. keymap.cpp/h
+3. keyState.cpp/h
+4. translator.cpp/h
+5. usbSender.cpp/h
+6. ps2host.cpp/h
+7. flags.cpp/h
+8. constants.h
+9. scancodes.h
+10. ps2\_codes.ods
+
+
