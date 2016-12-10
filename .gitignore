@@ -1,0 +1,12 @@
+# The executable.
+*.elf 
+
+# Object files.
+*.o   
+
+# Compiler generated dependencies.
+*.d   
+
+# Vim buffers
+*.swp
+*.swo
